@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Fruity</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__center container">
+                <div class="logo">
+                    <h1>Fruity</h1>
+                </div>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#header" class="nav__link scroll-link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <!-- <a href="#new" class="nav__link scroll-link">New</a> -->
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#all" class="nav__link scroll-link">Shop</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link scroll-link">Featured</a>
+                        </li>
+
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link scroll-link">Contact</a>
+                        </li>
+
+                        <li class="nav__close flex__center">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                            </svg>
+
+                        </li>
+                    </ul>
+                    <DIv class="toggle"></DIv>
+
+                    <div class="cart flex__center">
+                        <span>
+                            <svg class="">
+                               <a href="http://127.0.0.1:5500/cart.html"><use xlink:href="./images/sprite.svg#icon-cart-plus"></use></a>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="hamburger flex__center">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero__center container">
+                <div class="hero__left">
+                    <h1>Fresh Juice</h1>
+                    <p>
+                        We Beleive That Healthy Eating, Clean Air And, Gental Char Best Start To Genuine Wellbeging.
+                    </p>
+                    <a href="http://127.0.0.1:5500/index.html#all" class="hero__btn">SHOP NOW </a>
+                </div>
+
+                <div class="hero__right">
+
+                </div>
+            </div>
+
+            <a href="http://127.0.0.1:5500/index.html#all" class="go-down flex__center">
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-angle-down"> </use>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main>
+        
+
+        <!-- Category -->
+        <section class="section category">
+            <div class="category__center container">
+                <div class="category__left">
+                    <div class="content">
+                        <h2>Daily Fresh</h2>
+                        <h1>Fresh Fruits</h1>
+                        <a href="http://127.0.0.1:5500/index.html#featured" class="button category__btn">Shop Now</a>
+                    </div>
+                    <img src="./images/cat2.png" alt="">
+                </div>
+
+                <div class="category__right">
+                    <div class="content">
+                        <h2>Big Save</h2>
+                        <h1>Save 50%</h1>
+                        <a href="http://127.0.0.1:5500/index.html#featured" class="button category__btn">Shop Now</a>
+                    </div>
+                    <img src="./images/cat1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section all__products" id="all">
+            <div class="all__center container">
+                <div class="title">
+                    <h1>All Products</h1>
+                </div>
+
+                <div class="product__center">
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/apples.png" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera">Add to Cart</use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Apples</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/Custard apples.jpg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Custard Apples</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/mangoes.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Mangoes</h2>
+                          
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/goose.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Goose</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="images/beetroot.jpg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Beetroot</h2>
+                          
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/coconut.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Coconut</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/jackfruits.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Jack Fruits</h2>
+                          
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/pineapples.png" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Pine Apples</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/ovacado.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Ovacadoes</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/watermln.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Water Melon</h2>
+                          
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/popo.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Pow pows</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/White apples.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Local Apples</h2>
+                          
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/Pomegranate.png" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Pomegranate</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/Imported Tangerine.png" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Tingerine</h2>
+                          
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/Guavas.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Guavas</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/Green lemon.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Green Lemon</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/berriees.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Berries</h2>
+                        
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/pasion.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Passion Fruits</h2>
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                </div>
+                <div class="product">
+                    <div class="product__header">
+                        <img src="./images/product4.png" alt="">
+                        <span>
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__footer">
+                        <h2>Yellow Banana</h2>
+                       
+                        <h4 class="price">$500</h4>
+                        <button onclick="addToCart(item1)">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <img src="./images/Butternut.jpeg" alt="">
+                    <span>
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="product__footer">
+                    <h2>Butternut</h2>
+                    
+                    <h4 class="price">$500</h4>
+                    <button onclick="addToCart(item1)">Add to cart</button>
+
+            </div>
+        </div>
+        <div class="product">
+            <div class="product__header">
+                <img src="./images/Star fruit.jpg" alt="">
+                <span>
+                    <svg>
+                        <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="product__footer">
+                <h2>Star Fruit</h2>
+                
+                <h4 class="price">$500</h4>
+                <button onclick="addToCart(item1)">Add to cart</button>
+
+        </div>
+    </div>
+    <div class="product">
+        <div class="product__header">
+            <img src="./images/Yellow pawpaw.jpeg" alt="">
+            <span>
+                <svg>
+                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                </svg>
+            </span>
+        </div>
+        <div class="product__footer">
+            <h2>Yellow pawpaw</h2>
+            
+            <h4 class="price">$500</h4>
+            <button onclick="addToCart(item1)">Add to cart</button>
+
+    </div>
+</div>
+<div class="product">
+    <div class="product__header">
+        <img src="./images/paw-paw-red.jpg" alt="">
+        <span>
+            <svg>
+                <use xlink:href="./images/sprite.svg#icon-camera"></use>
+            </svg>
+        </span>
+    </div>
+    <div class="product__footer">
+        <h2>Red pawpaws</h2>
+        
+        <h4 class="price">$500</h4>
+        <button onclick="addToCart(item1)">Add to cart</button>
+
+</div>
+</div>
+<div class="product">
+    <div class="product__header">
+        <img src="./images/Green-Grapes.jpg" alt="">
+        <span>
+            <svg>
+                <use xlink:href="./images/sprite.svg#icon-camera"></use>
+            </svg>
+        </span>
+    </div>
+    <div class="product__footer">
+        <h2>Green Grapes</h2>
+        <div class="rating">
+        
+        <h4 class="price">$500</h4>
+        <button onclick="addToCart(item1)">Add to cart</button>
+
+</div>
+</div>
+            </div>
+        </section> 
+                </div>
+                  
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section" id="featured">
+            <div class="new__center container">
+                <div class="title">
+                    <h1>Featured Products</h1>
+                </div>
+
+                <div class="product__center">
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/oranges.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Oranges</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/pasion.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Passion Fruits</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/mongoes.png" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Mangoes</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/pineaples.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Pineapples</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    
+            </div>
+        </section>
+        <section class="section" id="featured">
+            <div class="new__center container">
+                <div class="title">
+                    <h1>Featured Products</h1>
+                </div>
+
+                <div class="product__center">
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/red berries.png" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Red berries</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/redgrapes.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Red Grapes</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/pamo.jpeg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Pamegranate</h2>
+                            
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product__header">
+                            <img src="./images/bbeetroot.jpg" alt="">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-camera"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="product__footer">
+                            <h2>Beetroot</h2>
+                           
+                            <h4 class="price">$500</h4>
+                            <button onclick="addToCart(item1)">Add to cart</button>
+
+                        </div>
+                    </div>
+                    
+            </div>
+        </section>
+
+       <section class="contact-section" id="contact"></section>
+           <div  class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+           </div>
+       </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html> 
